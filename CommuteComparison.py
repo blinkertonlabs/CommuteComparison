@@ -5,6 +5,9 @@
 #   excuse to learn more Python with a particular goal in mind.
 
 
+
+
+
 class Commute:
     def __init__(self, 
            commuteName,
@@ -38,11 +41,23 @@ class Commute:
 
 
 
+#   Main function
+def main():
 
-#   Create the commute scenarios
+    #   Create the commute scenarios
 
-baseLine = Commute('Baseline', 20, 21, 22, 4.00, 1)
+    baseLine = Commute(commuteName= 'Baseline Eaton Commute', 
+                    oneWayTripMiles= 20, 
+                    oneWayTripTimeMinutes= 21, 
+                    carFuelEconomyMPG= 22, 
+                    gasCostPerGallon= 4.00, 
+                    tripsPerWeek= 1)
 
-print(baseLine)
+    print(baseLine)
+
+
+
+if (__name__ == "__main__"):
+    main()
 
 
